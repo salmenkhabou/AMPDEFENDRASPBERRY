@@ -1,0 +1,139 @@
+2025-09-05 21:50:16.702139 - Modbus Read fc=3 addr=0 count=1
+2025-09-05 21:50:24.728902 - Modbus Read fc=3 addr=0 count=1
+Fri Sep  5 10:08:22 PM CET 2025 - Starting ocpp_honeypot.py...
+Fri Sep  5 10:08:22 PM CET 2025 - Starting iec104_honeypot.py...
+Fri Sep  5 10:08:22 PM CET 2025 - AMPDefend manager started (TEST_MODE=true)
+[2025-09-05 22:08:23] INFO     [c104] Python is running in buffered mode, messages will be printed with high delay! Set PYTHONUNBUFFERED=1 environment variable to enable unbuffered mode.
+2025-09-05 22:08:23.081626 - Starting IEC104 Honeypot via c104 library on port 2404
+Starting IEC104 Honeypot via c104 library on port 2404
+Traceback (most recent call last):
+  File "/home/raspberrypi/ampdefend/iec104_honeypot.py", line 46, in <module>
+    main()
+  File "/home/raspberrypi/ampdefend/iec104_honeypot.py", line 33, in main
+    server.on_receive_raw = on_receive_raw
+    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'c104._c104.Server' object attribute 'on_receive_raw' is read-only
+2025-09-05 22:08:23.172961 - Fake EV Charger Honeypot listening on port 8080...
+Fri Sep  5 10:09:05 PM CET 2025 - Starting ocpp_honeypot.py...
+Fri Sep  5 10:09:05 PM CET 2025 - Starting iec104_honeypot.py...
+Fri Sep  5 10:09:05 PM CET 2025 - AMPDefend manager started (TEST_MODE=true)
+[2025-09-05 22:09:06] INFO     [c104] Python is running in buffered mode, messages will be printed with high delay! Set PYTHONUNBUFFERED=1 environment variable to enable unbuffered mode.
+2025-09-05 22:09:06.108937 - Starting IEC104 Honeypot via c104 library on port 2404
+Starting IEC104 Honeypot via c104 library on port 2404
+Traceback (most recent call last):
+  File "/home/raspberrypi/ampdefend/iec104_honeypot.py", line 46, in <module>
+    main()
+  File "/home/raspberrypi/ampdefend/iec104_honeypot.py", line 33, in main
+    server.on_receive_raw = on_receive_raw
+    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'c104._c104.Server' object attribute 'on_receive_raw' is read-only
+2025-09-05 22:09:06.140244 - Fake EV Charger Honeypot listening on port 8080...
+2025-09-05 22:10:38.858594 - Modbus Read fc=3 addr=0 count=1
+Fri Sep  5 10:15:44 PM CET 2025 - Starting modbus_honeypot.py...
+Fri Sep  5 10:15:44 PM CET 2025 - Starting ocpp_honeypot.py...
+Fri Sep  5 10:15:44 PM CET 2025 - Starting iec104_honeypot.py...
+Fri Sep  5 10:15:44 PM CET 2025 - AMPDefend manager started (TEST_MODE=true)
+2025-09-05 22:15:44.820433 - Fake Smart Meter Honeypot listening on port 502...
+Fake Smart Meter Honeypot listening on port 502...
+Traceback (most recent call last):
+  File "/home/raspberrypi/ampdefend/modbus_honeypot.py", line 48, in <module>
+    fake_modbus_server()
+  File "/home/raspberrypi/ampdefend/modbus_honeypot.py", line 45, in fake_modbus_server
+    StartTcpServer(context, identity=identity, address=("0.0.0.0", 502))
+  File "/usr/local/lib/python3.11/dist-packages/pymodbus/server/sync.py", line 620, in StartTcpServer
+    server = ModbusTcpServer(context, framer, identity, address, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/pymodbus/server/sync.py", line 338, in __init__
+    socketserver.ThreadingTCPServer.__init__(self, self.address,
+  File "/usr/lib/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+PermissionError: [Errno 13] Permission denied
+[2025-09-05 22:15:44] INFO     [c104] Python is running in buffered mode, messages will be printed with high delay! Set PYTHONUNBUFFERED=1 environment variable to enable unbuffered mode.
+2025-09-05 22:15:44.900275 - Starting IEC104 Honeypot via c104 library on port 2404
+Starting IEC104 Honeypot via c104 library on port 2404
+Traceback (most recent call last):
+  File "/home/raspberrypi/ampdefend/iec104_honeypot.py", line 46, in <module>
+    main()
+  File "/home/raspberrypi/ampdefend/iec104_honeypot.py", line 33, in main
+    server.on_receive_raw = on_receive_raw
+    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'c104._c104.Server' object attribute 'on_receive_raw' is read-only
+2025-09-05 22:15:44.938738 - Fake EV Charger Honeypot listening on port 8080...
+Fri Sep  5 10:16:43 PM CET 2025 - Starting modbus_honeypot.py...
+Fri Sep  5 10:16:43 PM CET 2025 - Starting ocpp_honeypot.py...
+Fri Sep  5 10:16:44 PM CET 2025 - Starting iec104_honeypot.py...
+Fri Sep  5 10:16:44 PM CET 2025 - AMPDefend manager started (TEST_MODE=true)
+2025-09-05 22:16:44.112803 - Fake Smart Meter Honeypot listening on port 502...
+[2025-09-05 22:16:44] INFO     [c104] Python is running in buffered mode, messages will be printed with high delay! Set PYTHONUNBUFFERED=1 environment variable to enable unbuffered mode.
+2025-09-05 22:16:44.191966 - Starting IEC104 Honeypot via c104 library on port 2404
+Starting IEC104 Honeypot via c104 library on port 2404
+Traceback (most recent call last):
+  File "/home/raspberrypi/ampdefend/iec104_honeypot.py", line 46, in <module>
+    main()
+  File "/home/raspberrypi/ampdefend/iec104_honeypot.py", line 33, in main
+    server.on_receive_raw = on_receive_raw
+    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'c104._c104.Server' object attribute 'on_receive_raw' is read-only
+2025-09-05 22:16:44.201123 - Fake EV Charger Honeypot listening on port 8080...
+2025-09-05 22:19:13.596343 - Modbus Read fc=3 addr=0 count=1
+2025-09-05 22:19:18.978760 - Modbus Read fc=3 addr=0 count=1
+2025-09-05 22:22:29.460993 - Modbus Read fc=3 addr=0 count=1
+2025-09-05 22:51:35.554917 - Modbus Read fc=3 addr=0 count=1
+2025-09-05 23:03:17.069038 - Modbus Read fc=3 addr=0 count=1
+2025-09-05 23:18:02.722944 - Modbus Read fc=3 addr=0 count=1
+2025-09-05 23:46:09.320534 - Modbus Read fc=3 addr=0 count=1
+2025-09-05 23:49:39.121614 - Modbus Read fc=3 addr=0 count=1
+2025-09-06 00:19:52.758796 - Modbus Read fc=3 addr=0 count=1
+2025-09-06 00:30:43.659156 - Modbus Read fc=3 addr=0 count=1
+2025-09-06 00:31:28.774197 - Modbus Read fc=3 addr=0 count=1
+Sat Sep  6 12:34:00 AM CET 2025 - Starting modbus_honeypot.py...
+Sat Sep  6 12:34:01 AM CET 2025 - Starting ocpp_honeypot.py...
+Sat Sep  6 12:34:01 AM CET 2025 - Starting iec104_honeypot.py...
+Sat Sep  6 12:34:01 AM CET 2025 - AMPDefend manager started (TEST_MODE=true)
+[2025-09-06 00:34:02] INFO     [c104] Python is running in buffered mode, messages will be printed with high delay! Set PYTHONUNBUFFERED=1 environment variable to enable unbuffered mode.
+2025-09-06 00:34:02.104020 - Starting IEC104 Honeypot via c104 library on port 2404
+Starting IEC104 Honeypot via c104 library on port 2404
+Traceback (most recent call last):
+  File "/home/raspberrypi/ampdefend/iec104_honeypot.py", line 46, in <module>
+    main()
+  File "/home/raspberrypi/ampdefend/iec104_honeypot.py", line 33, in main
+    server.on_receive_raw = on_receive_raw
+    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'c104._c104.Server' object attribute 'on_receive_raw' is read-only
+2025-09-06 00:34:02.221233 - Fake Smart Meter Honeypot listening on port 502...
+Fake Smart Meter Honeypot listening on port 502...
+Traceback (most recent call last):
+  File "/home/raspberrypi/ampdefend/modbus_honeypot.py", line 48, in <module>
+    fake_modbus_server()
+  File "/home/raspberrypi/ampdefend/modbus_honeypot.py", line 45, in fake_modbus_server
+    StartTcpServer(context, identity=identity, address=("0.0.0.0", 502))
+  File "/usr/local/lib/python3.11/dist-packages/pymodbus/server/sync.py", line 620, in StartTcpServer
+    server = ModbusTcpServer(context, framer, identity, address, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/pymodbus/server/sync.py", line 338, in __init__
+    socketserver.ThreadingTCPServer.__init__(self, self.address,
+  File "/usr/lib/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+PermissionError: [Errno 13] Permission denied
+2025-09-06 00:34:02.296984 - Fake EV Charger Honeypot listening on port 8080...
+Sat Sep  6 12:38:59 AM CET 2025 - Starting modbus_honeypot.py...
+Sat Sep  6 12:38:59 AM CET 2025 - Starting iec104_honeypot.py...
+Sat Sep  6 12:38:59 AM CET 2025 - AMPDefend manager started (TEST_MODE=true)
+2025-09-06 00:38:59.598377 - Fake Smart Meter Honeypot listening on port 502...
+[2025-09-06 00:38:59] INFO     [c104] Python is running in buffered mode, messages will be printed with high delay! Set PYTHONUNBUFFERED=1 environment variable to enable unbuffered mode.
+2025-09-06 00:38:59.657519 - Starting IEC104 Honeypot via c104 library on port 2404
+Starting IEC104 Honeypot via c104 library on port 2404
+Traceback (most recent call last):
+  File "/home/raspberrypi/ampdefend/iec104_honeypot.py", line 46, in <module>
+    main()
+  File "/home/raspberrypi/ampdefend/iec104_honeypot.py", line 33, in main
+    server.on_receive_raw = on_receive_raw
+    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'c104._c104.Server' object attribute 'on_receive_raw' is read-only
+2025-09-07 21:28:53.525259 - Modbus Read fc=3 addr=0 count=1
+2025-09-07 21:35:18.581039 - Fake Smart Meter Honeypot listening on port 502...
+2025-09-07 21:59:21.099476 - Modbus Read fc=3 addr=0 count=1
